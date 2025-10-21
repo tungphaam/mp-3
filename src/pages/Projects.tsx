@@ -82,7 +82,6 @@ function Projects() {
             </div>
           </div>
           
-          // Calculator Section 
           <section id="calculator-wrapper">
             <h2>Quick Calculator</h2>
             <div className="calculator">
