@@ -7,7 +7,7 @@ import profileImg from '../assets/img.png';
 function Home() {
   return (
     <div id="page-wrapper">
-      <Header />
+      <Header title="Tung Pham" subtitle='Data Analyst | Computer Science Student'/>
       
       <div id="container">
         <Nav />

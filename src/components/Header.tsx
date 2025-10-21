@@ -1,11 +1,15 @@
-function Header() {
+interface HeaderProps {
+  title: string;
+  subtitle?: string;
+}
+
+function Header({ title, subtitle }: HeaderProps) {
   return (
     <header>
-      <h1>Tung Pham</h1>
-      <p>Data Analyst | Computer Science Student</p>
+      <h1>{title}</h1>
+      {subtitle && <p>{subtitle}</p>}
     </header>
   );
 }
-
 
 export default Header;
