@@ -85,11 +85,11 @@ nav a {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
-  color: #1b2021;                  /* base text color */
-  background-color: transparent;/* no background */
-  border: 2px solid #decbb7;       /* light border */
-  transition: all 0.3s ease;    /* smooth hover */
-  letter-spacing: 0.5px;        /* subtle spacing */
+  color: #1b2021;                  
+  background-color: transparent;
+  border: 2px solid #decbb7;       
+  transition: all 0.3s ease;    
+  letter-spacing: 0.5px;        
 }
 
 /* hover focus */

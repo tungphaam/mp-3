@@ -6,15 +6,11 @@ import Footer from '../components/Footer';
 function Achievements() {
   return (
     <div id="page-wrapper" className="achievements-page">
-      <header>
-        <h1>Achievements</h1>
-        <p>Learning | Certifications</p>
-      </header>
+      <Header title="Achievements" subtitle="Learning | Certifications" />
       
       <div id="container">
         <Nav />
         <Main>
-          {/* Dean's List */}
           <section className="acm-section">
             <h2>Dean's List</h2>
             <ul className="intro-list">
@@ -23,7 +19,6 @@ function Achievements() {
             </ul>
           </section>
           
-          {/* Competitions / Learning */}
           <section className="acm-section">
             <h2>Achievements in Competitions / Learning</h2>
             <ul className="intro-list">
@@ -42,7 +37,6 @@ function Achievements() {
             </ul>
           </section>
           
-          {/* Certifications */}
           <section className="achievement-section">
             <h2>Certifications</h2>
             <ul className="intro-list">
