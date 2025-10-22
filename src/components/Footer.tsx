@@ -12,7 +12,7 @@ function Footer() {
     <StyledFooter>
       <p>
         &#169; 2025 Tung Pham. All rights reserved.{' '}
-        <FooterLink to="/source">Credits</FooterLink>
+        <FooterLink to="/">Credits</FooterLink>
       </p>
     </StyledFooter>
   );
