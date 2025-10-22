@@ -1,3 +1,11 @@
+/**
+ * Navigation Component
+ * 
+ * Reusable navigation menu with React Router links.
+ * Displays vertically on desktop and horizontally on mobile.
+ * Used across all pages to provide consistent navigation.
+*/
+
 import { StyledNav, NavLink, NavItem, NavList } from '../styles/StyledComponents';
 
 function Nav() {

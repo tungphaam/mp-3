@@ -1,3 +1,9 @@
+/*
+ * Education page styles
+ *
+ * includes styles for school info, project details, and timeline displays.
+*/
+
 import styled from 'styled-components';
 
 export const EduMain = styled.main`

@@ -1,3 +1,13 @@
+/*
+ * useCalculator custom hook
+ *
+ * manages calculator state and operations to eliminate repetitive functions.
+ * provides state management for inputs, output, and mathematical ops.
+ *
+ * ops: add, subtract, multiply, divide, power
+ * returns: input states, setters, result, operations, and clear function
+*/
+
 import { useState } from 'react';
 
 export function useCalculator() {

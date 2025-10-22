@@ -1,3 +1,9 @@
+/*
+ * Contact page
+ *
+ * displays contact info including email addresses and LinkedIn profile.
+*/
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';

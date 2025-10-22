@@ -1,3 +1,12 @@
+/*
+ * Main app component
+ *
+ * root component that sets up routing for the entire application.
+ * configures react router with all page routes and applies global styles.
+ *
+ * routes: Home, Achievements, Contact, Education, Experience, Projects
+*/
+
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { GlobalStyles } from "./styles/GlobalStyles";
 

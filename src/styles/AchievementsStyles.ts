@@ -1,3 +1,10 @@
+/*
+ * Achievements Page Styles
+ *
+ * Styled components specific to the Achievements page.
+ * includes custom main layout with top padding and full-width sections.
+*/
+
 import styled from 'styled-components';
 
 export const AchievementsMain = styled.main`

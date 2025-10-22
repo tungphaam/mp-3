@@ -1,3 +1,12 @@
+/*
+ * Experience page
+ *
+ * Displays professional work experience and internships.
+ * lists companies, roles, dates, and key responsibilities/achievements
+ * for each position.
+*/
+
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';

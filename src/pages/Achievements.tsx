@@ -1,3 +1,11 @@
+/*
+ * Achievements page
+ *
+ * Displays academic achievements, certifications, and competition results.
+ * Sections: dean's list, competitions/learning, certifications
+*/
+
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import { PageWrapper, Container, IntroList, IntroListItem } from '../styles/StyledComponents';

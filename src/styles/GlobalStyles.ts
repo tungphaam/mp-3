@@ -1,3 +1,10 @@
+/*
+ * Global styles
+ *
+ * defines global css resets and base styles applied to the entire application.
+ * includes box-sizing, font-family, and root element styling.
+*/
+
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`

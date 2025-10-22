@@ -1,3 +1,9 @@
+/*
+ * Experience page styles
+ *
+ * includes styles for job listings and timeline formatting
+*/
+
 import styled from 'styled-components';
 
 export const ExpMain = styled.main`

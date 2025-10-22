@@ -1,3 +1,10 @@
+/*
+ * Shared styled components
+ *
+ * Reusable styled components used across multiple pages.
+ * includes: PageWrapper, Container, Header, Nav, Main, Footer, common elements
+*/
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

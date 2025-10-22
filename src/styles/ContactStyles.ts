@@ -1,3 +1,9 @@
+/*
+ * Contact page styles
+ *
+ * Styled components specific to the Contact page.
+*/
+
 import styled from 'styled-components';
 
 export const ContactMain = styled.main`

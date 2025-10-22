@@ -1,3 +1,12 @@
+/*
+ * Projects page
+ *
+ * Shows project portfolio with github links and interactive calculator
+ * projects section: lists technical projects with description
+ * calculator section: functional calculator using custom useCalculator hook
+*/
+
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';

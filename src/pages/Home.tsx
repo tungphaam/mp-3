@@ -1,3 +1,11 @@
+/*
+ * Home page
+ *
+ * Landing page with profile image and introduction.
+ * Displays personal statement and contact information.
+*/
+
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Main from '../components/Main';

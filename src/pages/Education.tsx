@@ -1,3 +1,11 @@
+/*
+ * Education page
+ *
+ * displays educational background and technical projects.
+ * includes Boston University info and detailed project descriptions
+ * with roles, dates, and accomplishments.
+*/
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
