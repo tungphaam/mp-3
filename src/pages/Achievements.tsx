@@ -1,6 +1,5 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
-import Main from '../components/Main';
 import { PageWrapper, Container, IntroList, IntroListItem } from '../styles/StyledComponents';
 import Footer from '../components/Footer';
 import { AchievementsMain } from '../styles/AchievementsStyles';
