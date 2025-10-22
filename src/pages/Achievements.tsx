@@ -1,60 +1,62 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Main from '../components/Main';
+import { PageWrapper, Container, IntroList, IntroListItem } from '../styles/StyledComponents';
 import Footer from '../components/Footer';
+import { AchievementsMain } from '../styles/AchievementsStyles';
 
 function Achievements() {
   return (
-    <div id="page-wrapper" className="achievements-page">
+    <PageWrapper>
       <Header title="Achievements" subtitle="Learning | Certifications" />
       
-      <div id="container">
+      <Container>
         <Nav />
-        <Main>
-          <section className="acm-section">
+        <AchievementsMain>
+          <section>
             <h2>Dean's List</h2>
-            <ul className="intro-list">
-              <li>Fall 2022</li>
-              <li>Spring 2025</li>
-            </ul>
+            <IntroList>
+              <IntroListItem>Fall 2022</IntroListItem>
+              <IntroListItem>Spring 2025</IntroListItem>
+            </IntroList>
           </section>
           
-          <section className="acm-section">
+          <section>
             <h2>Achievements in Competitions / Learning</h2>
-            <ul className="intro-list">
-              <li>
+            <IntroList>
+              <IntroListItem>
                 Achieved top 5% in a Kaggle competition predicting housing prices using 
                 regression and feature engineering.
-              </li>
-              <li>
+              </IntroListItem>
+              <IntroListItem>
                 Published a Medium article explaining machine learning model explainability 
                 techniques using SHAP and LIME.
-              </li>
-              <li>
+              </IntroListItem>
+              <IntroListItem>
                 Completed a capstone project forecasting stock prices using LSTM neural 
                 networks with historical and alternative data.
-              </li>
-            </ul>
+              </IntroListItem>
+            </IntroList>
           </section>
           
-          <section className="achievement-section">
+          <section>
             <h2>Certifications</h2>
-            <ul className="intro-list">
-              <li>
+            <IntroList>
+              <IntroListItem>
                 Google Data Analytics Professional Certificate – Completed coursework in SQL, 
                 data visualization, and data cleaning.
-              </li>
-              <li>
+              </IntroListItem>
+              <IntroListItem>
                 DeepLearning.AI TensorFlow Developer Certificate – Built neural networks and 
                 deep learning models using TensorFlow.
-              </li>
-            </ul>
+              </IntroListItem>
+            </IntroList>
           </section>
-        </Main>
-      </div>
+        </AchievementsMain>
+      </Container>
       
       <Footer />
-    </div>
+    </PageWrapper>
   );
 }
 

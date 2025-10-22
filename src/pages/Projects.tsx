@@ -1,8 +1,22 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
-import Main from '../components/Main';
 import Footer from '../components/Footer';
 import { useCalculator } from '../hooks/useCalculator';
+import { PageWrapper, Container } from '../styles/StyledComponents';
+import { 
+  ProjectsMain, 
+  ProjectsContainer, 
+  Project, 
+  GithubLink,
+  CalculatorWrapper,
+  Calculator,
+  CalcInputs,
+  CalcInput,
+  CalcButtons,
+  CalcButton,
+  ClearButton,
+  Output
+} from '../styles/ProjectsStyles';
 
 function Projects() {
   const {
@@ -21,14 +35,14 @@ function Projects() {
   } = useCalculator();
 
   return (
-    <div id="page-wrapper">
+    <PageWrapper>
       <Header title="Projects" />
       
-      <div id="container">
+      <Container>
         <Nav />
-        <Main>
-          <div className="projects">
-            <div className="project" id="project0">
+        <ProjectsMain>
+          <ProjectsContainer>
+            <Project>
               <h3>Boston Budget Analysis Project</h3>
               <p>
                 This project analyzes and predicts the City of Boston's budget 
@@ -36,17 +50,17 @@ function Projects() {
                 learning model to provide actionable insights into spending trends, 
                 priorities, and efficiency.
               </p>
-              <a 
+              <GithubLink 
                 href="https://github.com/tungphaam/cs506-final-project.git" 
                 className="github-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github Link
-              </a>
-            </div>
+              </GithubLink>
+            </Project>
             
-            <div className="project" id="project1">
+            <Project>
               <h3>KPIM Biking Project</h3>
               <p>
                 This project uses Excel to analyze KPIM Biking Corporation's sales data, 
@@ -54,74 +68,71 @@ function Projects() {
                 team with key insights into monthly revenue, customer types, product 
                 performance, and promotion impact.
               </p>
-              <a 
+              <GithubLink 
                 href="https://github.com/tungphaam/KPIM-Biking-Project.git" 
                 className="github-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github Link
-              </a>
-            </div>
+              </GithubLink>
+            </Project>
             
-            <div className="project" id="project2">
+            <Project>
               <h3>Vietinbank Project</h3>
               <p>
                 This project focused on enhancing the efficiency and accuracy of 
                 financial reporting for the Department of Planning and Financial 
                 Management.
               </p>
-              <a 
+              <GithubLink 
                 href="https://github.com/tungphaam/Vietinbank-Project.git" 
                 className="github-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github Link
-              </a>
-            </div>
-          </div>
+              </GithubLink>
+            </Project>
+          </ProjectsContainer>
           
-          <section id="calculator-wrapper">
+          <CalculatorWrapper>
             <h2>Quick Calculator</h2>
-            <div className="calculator">
-              <div className="calc-inputs">
-                <input 
+            <Calculator>
+              <CalcInputs>
+                <CalcInput
                   type="number" 
                   value={firstNumber}
                   onChange={(e) => setFirstNumber(e.target.value)}
                   placeholder="First number"
                 />
-                <input 
+                <CalcInput
                   type="number" 
                   value={secondNumber}
                   onChange={(e) => setSecondNumber(e.target.value)}
                   placeholder="Second number"
                 />
-              </div>
+              </CalcInputs>
               
-              <div className="calc-buttons">
-                <button onClick={add}>+</button>
-                <button onClick={subtract}>-</button>
-                <button onClick={multiply}>×</button>
-                <button onClick={divide}>÷</button>
-                <button onClick={power}>xʸ</button>
-                <button onClick={clear} className="clear-btn">Clear</button>
-              </div>
+              <CalcButtons>
+                <CalcButton onClick={add}>+</CalcButton>
+                <CalcButton onClick={subtract}>-</CalcButton>
+                <CalcButton onClick={multiply}>×</CalcButton>
+                <CalcButton onClick={divide}>÷</CalcButton>
+                <CalcButton onClick={power}>xʸ</CalcButton>
+                <ClearButton onClick={clear}>Clear</ClearButton>
+              </CalcButtons>
               
-              <h3 
-                id="output" 
-                className={isNegative ? 'negative' : ''}
-              >
+              <Output $isNegative={isNegative}>
                 {result}
-              </h3>
-            </div>
-          </section>
-        </Main>
-      </div>
+              </Output>
+            </Calculator>
+          </CalculatorWrapper>
+        </ProjectsMain>
+      </Container>
       
       <Footer />
-    </div>
+    </PageWrapper>
   );
 }
 

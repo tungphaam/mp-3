@@ -1,3 +1,5 @@
+import { StyledHeader, HeaderTitle, HeaderSubtitle } from "../styles/StyledComponents";
+
 interface HeaderProps {
   title: string;
   subtitle?: string;
@@ -5,10 +7,10 @@ interface HeaderProps {
 
 function Header({ title, subtitle }: HeaderProps) {
   return (
-    <header>
-      <h1>{title}</h1>
-      {subtitle && <p>{subtitle}</p>}
-    </header>
+    <StyledHeader>
+      <HeaderTitle>{title}</HeaderTitle>
+      {subtitle && <HeaderSubtitle>{subtitle}</HeaderSubtitle>}
+    </StyledHeader>
   );
 }
 

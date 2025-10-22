@@ -1,16 +1,17 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
-import Main from '../components/Main';
 import Footer from '../components/Footer';
+import { PageWrapper, Container } from '../styles/StyledComponents';
+import { ContactMain } from '../styles/ContactStyles';
 
 function Contact() {
   return (
-    <div id="page-wrapper" className="contact-page">
-      <Header title="Contact" subtitle="" />
+    <PageWrapper>
+      <Header title="Contact" />
       
-      <div id="container">
+      <Container>
         <Nav />
-        <Main>
+        <ContactMain>
           <h2>Email</h2>
           <p>personal - simonpham2003@gmail.com</p>
           <p>school - tungpham@bu.edu</p>
@@ -26,11 +27,11 @@ function Contact() {
               linkedin.com/in/tungduongpham/
             </a>
           </p>
-        </Main>
-      </div>
+        </ContactMain>
+      </Container>
       
       <Footer />
-    </div>
+    </PageWrapper>
   );
 }
 

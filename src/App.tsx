@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import './App.css';
+import { GlobalStyles } from "./styles/GlobalStyles";
 
 // components
 import Home from './pages/Home';
@@ -19,7 +19,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+        <GlobalStyles />
+        <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

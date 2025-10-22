@@ -2,38 +2,39 @@ import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
+import { PageWrapper, Container, MainImage, IntroList, IntroListItem } from '../styles/StyledComponents';
 import profileImg from '../assets/img.png';
 
 function Home() {
   return (
-    <div id="page-wrapper">
+    <PageWrapper>
       <Header title="Tung Pham" subtitle='Data Analyst | Computer Science Student'/>
       
-      <div id="container">
+      <Container>
         <Nav />
         <Main>
-          <img src={profileImg} alt="My pic" className="main-image" />
-          <ul className="intro-list">
-            <li>
+          <MainImage src={profileImg} alt="My pic" />
+          <IntroList>
+            <IntroListItem>
               I'm a senior at Boston University pursuing a Bachelor's degree in Computer Science. 
               My interests lie at the intersection of media and technology — where one uses code to 
               create, innovate, and enhance how stories are told and experiences are shared.
-            </li>
-            <li>
+            </IntroListItem>
+            <IntroListItem>
               As a curious and enthusiastic college student, I thrive on exploring new ideas and 
               challenging my perception of the world. I'm passionate about leveraging technology to 
               express creativity, transform thoughts, and gain deeper insights into the evolving 
               digital landscape.
-            </li>
-            <li>
+            </IntroListItem>
+            <IntroListItem>
               Feel free to reach out to me at tungpham@bu.edu!
-            </li>
-          </ul>
+            </IntroListItem>
+          </IntroList>
         </Main>
-      </div>
+      </Container>
       
       <Footer />
-    </div>
+    </PageWrapper>
   );
 }
 

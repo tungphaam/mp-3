@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom';
+import { StyledNav, NavLink, NavItem, NavList } from '../styles/StyledComponents';
 
 function Nav() {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/education">Education</Link></li>
-        <li><Link to="/experience">Experience</Link></li>
-        <li><Link to="/achievements">Achievements</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
+    <StyledNav>
+      <NavList>
+        <NavItem><NavLink to="/">Home</NavLink></NavItem>
+        <NavItem><NavLink to="/education">Education</NavLink></NavItem>
+        <NavItem><NavLink to="/experience">Experience</NavLink></NavItem>
+        <NavItem><NavLink to="/achievements">Achievements</NavLink></NavItem>
+        <NavItem><NavLink to="/projects">Projects</NavLink></NavItem>
+        <NavItem><NavLink to="/contact">Contact</NavLink></NavItem>
+      </NavList>
+    </StyledNav>
   );
 }
 

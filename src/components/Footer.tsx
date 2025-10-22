@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { StyledFooter, FooterLink } from "../styles/StyledComponents";
 
 function Footer() {
   return (
-    <footer>
+    <StyledFooter>
       <p>
         &#169; 2025 Tung Pham. All rights reserved.{' '}
-        <Link to="/source">Credits</Link>
+        <FooterLink to="/source">Credits</FooterLink>
       </p>
-    </footer>
+    </StyledFooter>
   );
 }
 
