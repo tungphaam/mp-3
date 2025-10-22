@@ -187,7 +187,8 @@ export const FooterLink = styled(Link)`
 export const IntroList = styled.ul`
   list-style-type: none;
   padding: 0;
-  max-width: 600px;
+  max-width: none;
+  width: 100%;
   text-align: left;
 
   @media screen and (max-width: 1000px) {
